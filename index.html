@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Python Portfolio showcasing my projects.">
+    <title>My Python Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6;
+            color: #333;
+        }
+        header {
+    background: url('https://static.vecteezy.com/system/resources/previews/000/701/690/original/abstract-polygonal-banner-background-vector.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 80px 0;
+    position: relative;
+    background-blur: 10px;
+}
+
+.header-content {
+    position: relative;
+    z-index: 1;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin: 0;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 15px;
+    font-weight: 300;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 30px;
+    margin-top: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #45a049;
+}
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+            color: #333;
+        }
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .project {
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+        .project:hover {
+            transform: translateY(-5px);
+        }
+        .project h3 {
+            font-size: 1.5rem;
+            color: #333;
+        }
+        .project p {
+            color: #555;
+        }
+        .project a {
+            display: inline-block;
+            margin-top: 10px;
+            color: #4CAF50;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .project a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+		
+	@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    header p {
+        font-size: 1rem;
+    }
+    .cta-button {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>My Python Portfolio</h1>
+        <p>Welcome to my portfolio! Here are some of the Python projects I have worked on.</p>
+    </header>
+
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hi! I'm Nick Romano, a Python developer with experience in building a variety of applications, from command-line tools to web applications. I love solving problems and continuously learning new things. Below are some of the projects I've worked on!</p>
+        </section>
+
+        <section id="projects">
+            <h2>My Projects</h2>
+            <div class="projects">
+                <!-- Project 1 -->
+                <div class="project">
+                    <h3>To-Do List Application</h3>
+                    <p>A command-line application for managing tasks. Allows users to add, remove, and mark tasks as completed. Data is stored in a simple text file.</p>
+                    <a href="https://github.com/yourusername/todo-list" target="_blank">View on GitHub</a>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project">
+                    <h3>Weather App</h3>
+                    <p>A Python app that fetches weather data from the OpenWeather API and displays the forecast for any city. Built using requests and JSON handling.</p>
+                    <a href="https://github.com/yourusername/weather-app" target="_blank">View on GitHub</a>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project">
+                    <h3>Personal Blog</h3>
+                    <p>A simple blog built with Flask. Users can create, edit, and view posts. The application uses SQLite to store the posts and deployable on any web server.</p>
+                    <a href="https://github.com/yourusername/personal-blog" target="_blank">View on GitHub</a>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project">
+                    <h3>Crypto Price Tracker</h3>
+                    <p>This project fetches live cryptocurrency prices and visualizes them in a graph using the CoinGecko API and Matplotlib.</p>
+                    <a href="https://github.com/yourusername/crypto-price-tracker" target="_blank">View on GitHub</a>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project">
+                    <h3>Email Spam Classifier</h3>
+                    <p>A machine learning project that classifies emails as spam or not using a Naive Bayes classifier, trained on a public dataset.</p>
+                    <a href="https://github.com/yourusername/spam-classifier" target="_blank">View on GitHub</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>Made with ❤️ by Nick Romano</p>
+        <p><a href="https://www.linkedin.com/in/yourprofile" target="_blank" style="color: white;">Connect with me on LinkedIn</a></p>
+    </footer>
+
+</body>
+</html>
